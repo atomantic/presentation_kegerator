@@ -105,7 +105,7 @@ gulp.task('connect', function() {
 
 gulp.task('open', function() {
   setTimeout(function() {
-    opn('http://localhost:8008');
+    opn('http://localhost:8008/index.html');
   }, 2000);
 });
 
