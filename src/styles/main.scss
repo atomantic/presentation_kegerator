@@ -594,14 +594,11 @@ p.big, div.big {
 .bespoke-active{
   .toast {
     transition-property: all;
-  	transition-duration: .5s;
+    transition-duration: .5s;
     transition-delay: 1s;
     bottom:0;
     right:0;
   }
-}
-#intro {
-  top:40%;
 }
 img.logo {
   border:none;

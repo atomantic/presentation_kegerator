@@ -3,7 +3,7 @@ html
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
-    title Presentation Template
+    title IoT Kegerator: Kegiot
 
     link(rel='stylesheet', type='text/css', href='styles/styles.css')
 
@@ -25,7 +25,10 @@ html
         #introtip
         .content#intro
           div.box.darken
-            h1
+            h2
+              small KegIoT
+            .mid the
+            h3
               small DIY IoT Kegerator
             .mid by
             .line
@@ -37,16 +40,21 @@ html
 
       section
         .fullscreen
-          x-gif(src='images/perfect_beardscratch.gif' fill n-times="1" speed="1.5" stopped)
+          x-gif(src='images/perfect_beardscratch.gif' fill stopped)
         .content.bottom
-          .box.quote ...
+          .box.quote Lesson: Change from <span class="alert alert-danger">root</span> user
 
       section
         .fullscreen
           x-gif(src='images/beerdrink.gif' fill n-times="1" speed="1.5" stopped)
         .content.bottom
-          .box.quote ...
+          .box.quote Lesson: Change from <span class="alert alert-danger">root</span> user
 
+      section
+        .fullscreen
+          x-gif(src='images/beerdrink.gif' fill n-times="1" speed="1.5" stopped)
+        .content.bottom
+          .box.quote ..
       section
         .fullscreen(ui-fx="blur1")
           x-gif(src="images/end.gif" fill stopped)
