@@ -21,7 +21,7 @@ html
     article
       section
         .fullscreen(ui-fx="blur1")
-          x-gif(src="images/drink.gif" fill stopped ping-pong)
+          x-gif(src="images/beer_pour.gif" fill stopped)
         #introtip
         .content#intro
           div.box.darken
@@ -34,16 +34,27 @@ html
             .line
               h4 Adam Eivy <span class="rotate">\[._.]/</span>
                 .me.center
-            audio#audio(controls,loop)
-              source(src="https://archive.org/download/DaftPunkTronLegacyEncomPartIi/DaftPunkTronLegacyEncomPartIi.ogg" type="audio/ogg")
-              source(src="https://archive.org/download/DaftPunkTronLegacyEncomPartIi/DaftPunkTronLegacyEncomPartIi.mp3" type="audio/mpeg")
+
+      section.fullscreen.gplay.tint
+        .content
+          .box
+            h2 What
+            ul
+              li Smart IoT Beverage Dispenser
+              li Custom Software
+              li Mix of BBB and Custom HW
+              li Modified Fridge
+              li All DIY
 
       section
+        .fullscreen(ui-fx="blur2")
+          x-gif(src="images/thinking_fred.gif" fill stopped ping-pong n-times="3")
         .content
-          h2 Timeline
-          ul
-            li Oct 2014: Idea
-            li June 2015: Let's do this!
+          .box
+            h2 Timeline
+            ul
+              li Oct 2014: Idea
+              li June 2015: Let's do this!
 
       section.fullscreen.xv.organic
         .content
@@ -54,16 +65,6 @@ html
               li Worked lunch, nights and 1 whole day (my garage)
               li ~$450 for all hardware including fridge
 
-      section.fullscreen.gplay.tint
-        .content
-          .box
-            h2 What
-            ul
-              li Smart IoT Beverage Dispenser
-              li Custom Developed Software
-              li Mix of BBB and Custom HW
-              li Modified Fridge and more
-              li All DIY
 
       section
         .fullscreen
