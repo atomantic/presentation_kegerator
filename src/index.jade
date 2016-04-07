@@ -72,6 +72,12 @@ html
       section
         .fullscreen
         .content
+          h3 High Level Architecture
+          img.solo(src="images/kegiot_hla.svg",height="100%")
+
+      section
+        .fullscreen
+        .content
           h2 The Basics
           ul
             li Danby Mini Fridge (Costco)
@@ -110,16 +116,17 @@ html
       section
         .fullscreen
         .content
-          h2 How it Works
+          h3 User Flow
+          img.solo(src="images/kegiot_flow.png",height="100%")
+
+      section
+        .fullscreen
+        .content
+          h2 Admin UI
           ol
-            li User: Scan RFID Card
-            li App: Checks Authorization & Rate Limits
-            li App: Opens Ball Valve
-            li App: LCD Displays Status
-            li Guest: Pulls Tap (liquid flows)
-            li App: Measures Liquid Flow
-            li App: Closes ball valve (hit limit or idle no flow)
-            li App: Logs usage
+            li Basic CMS (Backbone, Bootstrap)
+            li LoDB
+            li Socket.io
 
       section
         .fullscreen
