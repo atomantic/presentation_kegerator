@@ -45,27 +45,81 @@ html
             li Oct 2014: Idea
             li June 2015: Let's do this!
 
-      section
+      section.fullscreen.xv.organic
         .content
-          h2 Investment
-          ul
-            li ~30 hours across group, Total 90 hours person hrs
-            li Worked lunch, nights and 1 whole day (my garage)
-            li ~$450 for all hardware including fridge
+          .box
+            h2 Investment
+            ul
+              li ~30 hours across group, Total 90 hours person hrs
+              li Worked lunch, nights and 1 whole day (my garage)
+              li ~$450 for all hardware including fridge
 
-      section
+      section.fullscreen.gplay.tint
         .content
-          h2 What
-          ul
-            li Smart IoT Beverage Dispenser
-            li Custom Developed Software
-            li Mix of BBB and Custom HW
-            li Modified Fridge and more
-            li All DIY
+          .box
+            h2 What
+            ul
+              li Smart IoT Beverage Dispenser
+              li Custom Developed Software
+              li Mix of BBB and Custom HW
+              li Modified Fridge and more
+              li All DIY
 
       section
         .fullscreen
           img.fillh(src="images/usecases.jpg")
+
+      section
+        .fullscreen
+        .content
+          h2 The Basics
+          ul
+            li Danby Mini Fridge (Costco)
+            li CO2 Tank, 5 Lbs
+            li Corny Key, 5 Gal
+
+      section
+        .fullscreen
+        .content
+          h2 Rate Limiting
+          ul
+            li Solenoid / Ball Valve
+            li Flow Meter
+            li RFID Reader/Module, 125 KHz
+            li BeagleBone Black, RevC
+
+
+      section
+        .fullscreen
+        .content
+          h2 The Beagle Bone Black
+          ul
+            li Debian Linux
+            li Node.JS
+
+      section
+        .fullscreen
+        .content
+          h2 Enhancements
+          ul
+            li LCD 16x2 Black & White
+            li Custom Cape, IC2 support
+            li Wireless 802.11 ac
+            li Temperature Sensor
+
+      section
+        .fullscreen
+        .content
+          h2 How it Works
+          ol
+            li User: Scan RFID Card
+            li App: Checks Authorization & Rate Limits
+            li App: Opens Ball Valve
+            li App: LCD Displays Status
+            li Guest: Pulls Tap (liquid flows)
+            li App: Measures Liquid Flow
+            li App: Closes ball valve (hit limit or idle no flow)
+            li App: Logs usage
 
       section
         .fullscreen
@@ -79,11 +133,6 @@ html
         .content.bottom
           .box.quote Lesson: Drink up :)
 
-      section
-        .fullscreen
-          x-gif(src='images/beerdrink.gif' fill n-times="1" speed="1.5" stopped)
-        .content.bottom
-          .box.quote ..
       section
         .fullscreen(ui-fx="blur1")
           x-gif(src="images/end.gif" fill stopped)

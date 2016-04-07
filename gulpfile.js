@@ -1,11 +1,9 @@
 'use strict';
 
-var gulp = require('gulp'),
-  $ = require('gulp-load-plugins')(),
-  deploy = require('gulp-gh-pages'),
-  path = require('path'),
-  opn = require('opn'),
-  projectName = path.basename(__dirname);
+var gulp = require('gulp');
+var $ = require('gulp-load-plugins')();
+var deploy = require('gulp-gh-pages');
+var opn = require('opn');
 
 // Styles
 gulp.task('styles', function() {
@@ -82,7 +80,7 @@ gulp.task('copy', function() {
     {
       base: 'src/'
     })
-    .pipe(gulp.dest('public'))
+    .pipe(gulp.dest('public'));
 });
 
 gulp.task('deploy', function() {
@@ -99,7 +97,7 @@ gulp.task('connect', function() {
     root: ['public'],
     port: 8008,
     livereload: true
-  })
+  });
 });
 
 
