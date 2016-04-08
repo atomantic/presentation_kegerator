@@ -56,6 +56,12 @@ html
               li Oct 2014: Idea
               li June 2015: Let's do this!
 
+      section
+        .fullscreen
+        .content
+          h2 The Team
+          img.fillh.solo(src="images/team.jpg")
+
       section.fullscreen.xv.organic
         .content
           .box
@@ -64,7 +70,6 @@ html
               li ~30 hours across group, Total 90 hours person hrs
               li Worked lunch, nights and 1 whole day (my garage)
               li ~$450 for all hardware including fridge
-
 
       section
         .fullscreen
@@ -84,7 +89,6 @@ html
             li Danby Mini Fridge (Costco)
             li CO2 Tank, 5 Lbs
             li Corny Key, 5 Gal
-
 
       section
         .fullscreen
@@ -108,12 +112,22 @@ html
       section
         .fullscreen
         .content
+          h3 User Flow
+          img.solo(src="images/kegiot_flow.png",height="100%")
+
+      section
+        .fullscreen
+        .content
           h2 Enhancements
           ul
             li LCD 16x2 Black & White
             li Custom Cape, IC2 support
             li Wireless 802.11 ac
             li Temperature Sensor
+
+      section
+        .fullscreen
+          img.fillh(src="images/lcd.jpg")
 
       section
         .fullscreen
@@ -127,22 +141,33 @@ html
 
       section
         .fullscreen
-          img.fillh(src="images/lcd.jpg")
-
-      section
-        .fullscreen
-        .content
-          h3 User Flow
-          img.solo(src="images/kegiot_flow.png",height="100%")
-
-      section
-        .fullscreen
         .content
           h2 Admin UI
           ul
             li Basic CMS (Backbone, Bootstrap)
             li LowDB
             li Socket.io
+
+      section
+        .fullscreen
+        .content
+          h2 Challenges
+          ul
+            li We suck at industrial design
+            li Stepping Voltage (Fried Temp Sensor)
+            li IC2 and Foreign HW
+            li USB Drivers & Uptime
+
+      section
+        .fullscreen
+        .content
+          h2 Next Steps
+          ul
+            li Log Rotation
+            li Wifi
+            li Improve USB/RFID error handling / restart
+            li Analytics
+            li Replace Fried Temp Sensor
 
       section
         .fullscreen
