@@ -85,6 +85,7 @@ html
             li CO2 Tank, 5 Lbs
             li Corny Key, 5 Gal
 
+
       section
         .fullscreen
         .content
@@ -95,14 +96,14 @@ html
             li RFID Reader/Module, 125 KHz
             li BeagleBone Black, RevC
 
-
       section
         .fullscreen
+          img.fillh(src="images/bbb.jpg")
         .content
-          h2 The Beagle Bone Black
+          h2 Beagle Bone Black
           ul
-            li Debian Linux
-            li Node.JS
+            li.alert.alert-info Debian Linux
+            li.alert.alert-success Node.JS
 
       section
         .fullscreen
@@ -117,6 +118,20 @@ html
       section
         .fullscreen
         .content
+          h2 Slack Integration
+          ul
+            li Poor Man's Admin Discovery
+            li Temperature Threshold Alerts
+            li Keg Volume Alerts
+          img(src="images/alerts.png")
+
+      section
+        .fullscreen
+          img.fillh(src="images/lcd.jpg")
+
+      section
+        .fullscreen
+        .content
           h3 User Flow
           img.solo(src="images/kegiot_flow.png",height="100%")
 
@@ -124,9 +139,9 @@ html
         .fullscreen
         .content
           h2 Admin UI
-          ol
+          ul
             li Basic CMS (Backbone, Bootstrap)
-            li LoDB
+            li LowDB
             li Socket.io
 
       section
