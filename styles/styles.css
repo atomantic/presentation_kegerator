@@ -1635,15 +1635,16 @@ img.smallish {
 :not(pre) > code[class*="language-"] {
   padding: 10px; }
 
+/*
 .content img {
-  border: 0.13em solid #545454;
+  border: 0.13em solid rgb(84, 84, 84);
   box-shadow: black 1px 1px 0.3em -0.1em inset;
-  border-radius: 0.3em; }
-
-.content img.solo {
-  border: none;
-  box-shadow: none; }
-
+  border-radius: 0.3em;
+}
+.content img.solo{
+  border:none;
+  box-shadow:none;
+}*/
 @keyframes cursor {
   0% {
     opacity: 0; }
@@ -1688,9 +1689,6 @@ p.big, div.big {
   transition-delay: 1s;
   bottom: 0;
   right: 0; }
-
-#intro {
-  top: 40%; }
 
 img.logo {
   border: none;
@@ -1793,6 +1791,10 @@ button {
   -webkit-filter: blur(2px);
           filter: blur(2px); }
 
+[ui-fx~="blur3"] {
+  -webkit-filter: blur(3px);
+          filter: blur(3px); }
+
 [ui-fx~="dark50%"] {
   opacity: 0.5; }
 
@@ -1807,60 +1809,6 @@ button {
   -webkit-filter: blur(2px) hue-rotate(180deg) brightness(1.1) contrast(2);
           filter: blur(2px) hue-rotate(180deg) brightness(1.1) contrast(2); }
 
-.gif-shocked {
-  background-color: black; }
-  .gif-shocked::before {
-    content: '';
-    position: absolute;
-    height: 20%;
-    width: 20%;
-    background-size: cover;
-    background-image: url(../images/shocked.gif);
-    background-position: 50% 50%;
-    transform-origin: 0 0;
-    transform: scale(5);
-    -webkit-filter: blur(0.5px);
-            filter: blur(0.5px);
-    opacity: 0.5; }
-
-.gif-skull-2 {
-  background: url("../images/an_spinning_flaming_skull.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%; }
-
-.fact {
-  background-color: black; }
-  .fact::before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-image: url(../images/carl_sagan_good.gif);
-    background-position: 50% 50%;
-    transform-origin: 0 0;
-    transform: scale(1);
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 0.4; }
-
-.not-sure-if-right {
-  background-color: black; }
-  .not-sure-if-right::before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-image: url(../images/shaking_head_breaking_bad.gif);
-    background-position: 80% 0%;
-    transform-origin: 0 0;
-    transform: scale(1);
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 0.5; }
-
 .black {
   background-color: black; }
 
@@ -1870,69 +1818,124 @@ button {
 .white {
   background-color: #fff; }
 
-.yeahnah {
-  background-color: black; }
-  .yeahnah::before {
-    content: '';
-    position: absolute;
-    height: 20%;
-    width: 20%;
-    background-size: cover;
-    background-image: url(../images/yeahnah.gif);
-    background-position: 100% 50%;
-    transform-origin: 0 0;
-    transform: scale(5);
-    -webkit-filter: blur(0.5px);
-            filter: blur(0.5px);
-    opacity: 1; }
+.carbonfiber {
+  background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+  background-color: #282828;
+  background-size: 16px 16px; }
 
-.yep {
-  background-color: black; }
-  .yep::before {
-    content: '';
-    position: absolute;
-    height: 20%;
-    width: 20%;
-    background-size: cover;
-    background-image: url(../images/yep.gif);
-    background-position: 50% 50%;
-    transform-origin: 0 0;
-    transform: scale(5);
-    -webkit-filter: blur(0.5px);
-            filter: blur(0.5px);
-    opacity: 1; }
+.carbon {
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px; }
 
-.ticked {
-  background-color: black; }
-  .ticked::before {
-    content: '';
-    position: absolute;
-    height: 20%;
-    width: 20%;
-    background-size: cover;
-    background-image: url(../images/ticked.gif);
-    background-position: 50% 50%;
-    transform-origin: 0 0;
-    transform: scale(5);
-    -webkit-filter: blur(0.5px);
-            filter: blur(0.5px);
-    opacity: 0.5; }
+.seigaiha {
+  background-color: silver;
+  background-image: radial-gradient(circle at 100% 150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent), radial-gradient(circle at 0 150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent), radial-gradient(circle at 50% 100%, white 10%, silver 11%, silver 23%, white 24%, white 30%, silver 31%, silver 43%, white 44%, white 50%, silver 51%, silver 63%, white 64%, white 71%, transparent 71%, transparent), radial-gradient(circle at 100% 50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent), radial-gradient(circle at 0 50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent);
+  background-size: 100px 50px; }
 
-.homescreen {
-  background-color: black; }
-  .homescreen::before {
-    content: '';
-    position: absolute;
-    height: 20%;
-    width: 20%;
-    background-size: cover;
-    background-image: url(/images/mtnwest.gif);
-    background-position: 50% 50%;
-    transform-origin: 0 0;
-    transform: scale(5);
-    -webkit-filter: blur(0.5px);
-            filter: blur(0.5px);
-    opacity: 0.5; }
+.cubes {
+  background-color: #556;
+  background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px; }
+
+.paper {
+  background-color: #fff;
+  background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), linear-gradient(#eee 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em; }
+
+.honeycomb {
+  background: radial-gradient(circle farthest-side at 0% 50%, #fb1 23.5%, rgba(240, 166, 17, 0) 0) 21px 30px, radial-gradient(circle farthest-side at 0% 50%, #B71 24%, rgba(240, 166, 17, 0) 0) 19px 30px, linear-gradient(#fb1 14%, rgba(240, 166, 17, 0) 0, rgba(240, 166, 17, 0) 85%, #fb1 0) 0 0, linear-gradient(150deg, #fb1 24%, #B71 0, #B71 26%, rgba(240, 166, 17, 0) 0, rgba(240, 166, 17, 0) 74%, #B71 0, #B71 76%, #fb1 0) 0 0, linear-gradient(30deg, #fb1 24%, #B71 0, #B71 26%, rgba(240, 166, 17, 0) 0, rgba(240, 166, 17, 0) 74%, #B71 0, #B71 76%, #fb1 0) 0 0, linear-gradient(90deg, #B71 2%, #fb1 0, #fb1 98%, #B71 0%) 0 0 #fb1;
+  background-size: 40px 60px; }
+
+.wave {
+  background: linear-gradient(#ffffff 50%, rgba(255, 255, 255, 0) 0) 0 0, radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255, 255, 255, 0) 0) 0 0, radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255, 255, 255, 0) 0) 55px 0 #48B;
+  background-size: 110px 200px;
+  background-repeat: repeat-x; }
+
+.blueprint {
+  background-color: #269;
+  background-image: linear-gradient(white 2px, transparent 2px), linear-gradient(90deg, white 2px, transparent 2px), linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px; }
+
+.shippo {
+  background-color: #def;
+  background-image: radial-gradient(closest-side, transparent 98%, rgba(0, 0, 0, 0.3) 99%), radial-gradient(closest-side, transparent 98%, rgba(0, 0, 0, 0.3) 99%);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px; }
+
+.tint {
+  background-color: #004e8a; }
+
+.lighttint {
+  background-color: #168e9e; }
+
+.organic {
+  background-color: #472f00; }
+
+.light {
+  background-color: #cfcfcf; }
+
+.blackthread {
+  background-image: url("../images/patterns/black-thread-light.png"); }
+
+.brickwalldark {
+  background-image: url("../images/patterns/brick-wall-dark.png"); }
+
+.brickwall {
+  background-image: url("../images/patterns/brick-wall.png"); }
+
+.diagmonds {
+  background-image: url("../images/patterns/diagmonds-light.png"); }
+
+.diamondupholstery {
+  background-image: url("../images/patterns/diamond-upholstery.png"); }
+
+.gplay {
+  background-image: url("../images/patterns/gplay.png"); }
+
+.gravel {
+  background-image: url("../images/patterns/gravel.png"); }
+
+.oldmath {
+  background-image: url("../images/patterns/old-mathematics.png"); }
+
+.purtywood {
+  background-image: url("../images/patterns/purty-wood.png"); }
+
+.bullseyes {
+  background-image: url("../images/patterns/strange-bullseyes.png"); }
+
+.escheresque {
+  background-image: url("../images/patterns/escheresque.png"); }
+
+.randomgrey {
+  background-image: url("../images/patterns/random-grey-variations.png"); }
+
+.straws {
+  background-image: url("../images/patterns/straws.png"); }
+
+.subtlegrey {
+  background-image: url("../images/patterns/subtle-grey.png"); }
+
+.woodtilecolor {
+  background-image: url("../images/patterns/tileable-wood-colored.png"); }
+
+.woodtile {
+  background-image: url("../images/patterns/tileable-wood.png"); }
+
+.treebark {
+  background-image: url("../images/patterns/tree-bark.png"); }
+
+.washi {
+  background-image: url("../images/patterns/washi.png"); }
+
+.wood-pattern {
+  background-image: url("../images/patterns/wood-pattern.png"); }
+
+.xv {
+  background-image: url("../images/patterns/xv.png"); }
 
 @font-face {
   font-family: 'Raleway';
