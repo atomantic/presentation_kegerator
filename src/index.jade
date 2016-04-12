@@ -69,12 +69,6 @@ html
 
       section.fullscreen
         .content
-          img(src="images/process_lcd.jpg")
-
-
-
-      section.fullscreen
-        .content
           img(src="images/process_assembly.jpg")
 
 
@@ -96,11 +90,8 @@ html
         .fullscreen
           img.fillh(src="images/usecases.jpg")
 
-      section
-        .fullscreen
-        .content
-          h3 High Level Architecture
-          img.solo(src="images/kegiot_hla.svg",height="100%")
+      section.fullscreen
+        img.fillh(src="images/kegiot_hla.svg")
 
       section
         .fullscreen.fullscreen.gplay
@@ -117,10 +108,10 @@ html
         .content
           h2 Rate Limiting
           ul
-            li Solenoid / Ball Valve
-            li Flow Meter
-            li RFID Reader/Module, 125 KHz
             li BeagleBone Black, RevC
+            li RFID Reader/Module, 125 KHz
+            li Flow Meter
+            li Solenoid / Ball Valve
 
       section
         .fullscreen
@@ -134,8 +125,8 @@ html
       section
         .fullscreen
         .content
-          h3 User Flow
-          img.solo(src="images/kegiot_flow.png",height="100%")
+          h4 User Flow
+          img.filh(src="images/kegiot_flow.png",height="100%")
 
       section
         .fullscreen
@@ -144,8 +135,11 @@ html
           ul
             li LCD 16x2 Black & White
             li Custom Cape, IC2 support
-            li Wireless 802.11 ac
             li Temperature Sensor
+
+      section.fullscreen
+        .content
+          img(src="images/process_lcd.jpg")
 
       section
         .fullscreen
@@ -156,7 +150,7 @@ html
         .content
           h2 Slack Integration
           ul
-            li Poor Man's Admin Discovery
+            li Cheap Admin Discovery
             li Temperature Threshold Alerts
             li Keg Volume Alerts
           img(src="images/alerts.png")
@@ -164,11 +158,11 @@ html
       section
         .fullscreen
         .content
-          h2 Admin UI
+          h2 Admin Panel
           ul
-            li Basic CMS (Backbone, Bootstrap)
-            li LowDB
-            li Socket.io
+            li Simple UI: <span class="alert alert-info">Backbone</span> | <span class="alert alert-info">Bootstrap</span>
+            li LowDB <span class="alert alert-detail">JSON</span> files
+            li Socket.io <span class="alert alert-info">websockets</span>
 
       section
         .fullscreen
@@ -188,15 +182,34 @@ html
           h2 Challenges
           ul
             li We suck at industrial design
-            li Stepping Voltage (Fried Temp Sensor)
+            li Stepping voltage (<span class="alert alert-danger">fried</span> temp sensor)
             li IC2 and Foreign HW
-            li RFID/USB Disconnecting
-            li Filling Corny Kegs
+            li RFID/USB <span class="alert alert-warning">Disconnecting</span>
             li Cleaning the Valve
+            li <span class="alert alert-detail">Filling</span> Corny Kegs
 
       section.fullscreen
         .content
           img.solo(src="images/spigot.jpg")
+
+      section.fullscreen.gplay.tint
+        .content
+          h2 Lessons
+          .mid from
+          h2 Use
+          .mid (or lack thereof)
+
+      section
+        .fullscreen
+          x-gif(src='images/perfect_beardscratch.gif' fill stopped)
+        .content.bottom
+          .box.quote <span class="alert alert-success">Lesson:</span> Change from <span class="alert alert-danger">root</span> user
+
+      section
+        .fullscreen(ui-fx="blur3")
+          x-gif(src='images/beerdrink.gif' fill n-times="1" speed="1.5" stopped)
+        .content.bottom
+          .box.quote <span class="alert alert-success">Lesson:</span> Drink Frequently :)
 
       section
         .fullscreen
@@ -205,21 +218,9 @@ html
           ul
             li Log Rotation
             li Wifi
-            li Improve USB/RFID error handling / restart
+            li Improve USB/RFID Disconnect Handling
             li Analytics
             li Replace Fried Temp Sensor
-
-      section
-        .fullscreen
-          x-gif(src='images/perfect_beardscratch.gif' fill stopped)
-        .content.bottom
-          .box.quote Lesson: Change from <span class="alert alert-danger">root</span> user
-
-      section
-        .fullscreen(ui-fx="blur3")
-          x-gif(src='images/beerdrink.gif' fill n-times="1" speed="1.5" stopped)
-        .content.bottom
-          .box.quote Lesson: Drink up :)
 
       section
         .fullscreen(ui-fx="blur3")
