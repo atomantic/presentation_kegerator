@@ -4,7 +4,7 @@
 
 ## View the Slides
 
-The slides are hosted on [github pages](http://bit.ly/diykeg)
+The slides are hosted on [github pages](http://bit.ly/kegiot)
 
 or you can build the slides locally:
 
