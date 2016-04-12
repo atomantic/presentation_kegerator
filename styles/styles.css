@@ -6,17 +6,16 @@
  */
 code[class*="language-"],
 pre[class*="language-"] {
-  font-family: Consolas, Monaco, 'Andale Mono', monospace;
-  direction: ltr;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
+  word-wrap: normal;
   line-height: 1.5;
   -moz-tab-size: 4;
   tab-size: 4;
   -webkit-hyphens: none;
-  -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none; }
 
@@ -37,7 +36,8 @@ code[class*="language-"] {
 :not(pre) > code[class*="language-"] {
   padding: .2em;
   border-radius: .3em;
-  box-shadow: none; }
+  box-shadow: none;
+  white-space: normal; }
 
 .token.comment,
 .token.prolog,
@@ -1252,8 +1252,7 @@ article {
   height: 100%;
   width: 100%;
   border: none;
-  pointer-events: none;
-  transition: -webkit-transform 5s 5s; }
+  pointer-events: none; }
   .bespoke-slide iframe.x10 {
     height: 1000%; }
     .bespoke-slide iframe.x10.scrolldown {
