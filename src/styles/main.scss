@@ -303,6 +303,11 @@ ul {
       }
     }
   }
+  &.tight {
+    li {
+      line-height: 32px;
+    }
+  }
 }
 
 li {
