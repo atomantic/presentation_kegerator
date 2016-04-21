@@ -6,16 +6,17 @@
  */
 code[class*="language-"],
 pre[class*="language-"] {
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  direction: ltr;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
-  word-wrap: normal;
   line-height: 1.5;
   -moz-tab-size: 4;
   tab-size: 4;
   -webkit-hyphens: none;
+  -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none; }
 
@@ -36,8 +37,7 @@ code[class*="language-"] {
 :not(pre) > code[class*="language-"] {
   padding: .2em;
   border-radius: .3em;
-  box-shadow: none;
-  white-space: normal; }
+  box-shadow: none; }
 
 .token.comment,
 .token.prolog,
@@ -1252,7 +1252,8 @@ article {
   height: 100%;
   width: 100%;
   border: none;
-  pointer-events: none; }
+  pointer-events: none;
+  transition: -webkit-transform 5s 5s; }
   .bespoke-slide iframe.x10 {
     height: 1000%; }
     .bespoke-slide iframe.x10.scrolldown {
@@ -1967,3 +1968,8 @@ button {
   font-style: italic;
   font-weight: 400;
   src: local("EB Garamond 12 Italic"), url(../fonts/ebgaramond-400i.woff) format("woff"); }
+
+.credit {
+  position: absolute;
+  bottom: 10px;
+  right: 10px; }
