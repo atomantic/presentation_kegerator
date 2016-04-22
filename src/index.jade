@@ -21,7 +21,7 @@ html
     article
       section
         .fullscreen(ui-fx="blur1")
-          x-gif(src="images/beer_pour.gif" fill stopped)
+          x-gif(src="images/stout.gif" fill stopped)
         #introtip
         .content#intro
           div.box.darken
@@ -55,12 +55,12 @@ html
             ul
               li Oct 2014: Idea
               li June 2015: Let's do this!
+              li ~ 1 week of work
 
-      section
-        .fullscreen
+      section.fullscreen
+        img.fillh.solo(src="images/team.jpg")
         .content
-          h3 The Team
-          img.fillh.solo(src="images/team.jpg")
+          h4.alert.alert-info The Team
 
       section.fullscreen
         .content
@@ -111,7 +111,7 @@ html
             li BeagleBone Black, RevC
             li RFID Reader/Module, 125 KHz
             li Flow Meter
-            li Solenoid / Ball Valve
+            li Solenoid + Ball Valve
 
       section
         .fullscreen
@@ -179,6 +179,22 @@ html
       section
         .fullscreen
           img.fillh(src="images/admin_users.png")
+
+      section
+        .content
+          .box
+            h2 Local Testing
+            pre.big: code.language-javascript.
+              if (process.env.MODE === 'desktop') {
+                var _ = require('./_');
+                module.exports.readTemperature = function(callback) {
+                  callback(_.random(37, 38)); // dummy data
+                }
+              } else {
+                var bs = require('bonescript');
+                var SENSOR_PIN = 'P9_40';
+                ...
+              }
 
       section
         .fullscreen
