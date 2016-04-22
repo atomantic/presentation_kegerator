@@ -585,6 +585,12 @@ code.big {
   display:block
 }
 
+.fillw {
+  width:100%;
+  margin:auto;
+  display:block
+}
+
 p.big, div.big {
   font-size:32px;
   line-height:60px;
@@ -631,7 +637,7 @@ img.logo {
 #introtip {
   position:absolute;
   top:50px;
-  right:10px;
+  left:10px;
 }
 .notifyjs-eivy-base {
   white-space: nowrap;

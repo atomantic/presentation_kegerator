@@ -136,7 +136,7 @@ setTimeout(function() {
       className: 'base',
       autoHide: false,
       arrowShow: false,
-      position: "left bottom"
+      position: "right bottom"
     });
     $('#audio').notify({
       text: '(optionally, press play for soundtrack)'

@@ -22,6 +22,7 @@ html
       section
         .fullscreen(ui-fx="blur1")
           x-gif(src="images/stout.gif" fill stopped)
+        .credit cinemagraph by <a href="https://www.reddit.com/user/BigMurph26">BigMurph26</a>
         #introtip
         .content#intro
           div.box.darken
@@ -269,11 +270,12 @@ html
         .content
           img.fillh(src="images/flange.jpg")
 
-      section
-        .fullscreen(ui-fx="blur3")
-          x-gif(src="images/drink.gif" fill stopped speed=".5")
-        .content(data-bespoke-state='light')
-          div.box.darken
+      section.fullscreen
+        img.fillw(src="images/clink.jpeg")
+        //.fullscreen(ui-fx="blur3")
+        //x-gif(src="images/drink.gif" fill stopped speed=".5")
+        .content
+          .box
             .mid Questions?
             .line
               .me.center
