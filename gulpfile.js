@@ -8,7 +8,7 @@ var opn = require('opn');
 // Styles
 gulp.task('styles', function() {
   return gulp.src([
-    'src/bower_components/prism/themes/prism-funky.css',
+    'src/bower_components/prism/themes/prism-okaidia.css',
     'src/bower_components/animate.css/animate.min.css',
     'src/styles/**/*.scss'])
     .pipe($.sass({

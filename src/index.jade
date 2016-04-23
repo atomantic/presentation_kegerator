@@ -58,6 +58,16 @@ html
               li June 2015: Let's do this!
               li ~ 1 week of work
 
+      section.fullscreen.xv.organic
+        .content
+          .box
+            h2 Investment
+            ul
+              li ~30 hours together
+              li ~90 individual person hours
+              li Worked lunch, nights and 1 whole day (my garage)
+              li ~$450 for all hardware including fridge
+
       section.fullscreen
         img.fillh.solo(src="images/team.jpg")
         .content
@@ -71,21 +81,6 @@ html
       section.fullscreen
         .content
           img(src="images/process_assembly.jpg")
-
-
-      section.fullscreen
-        .content
-          img(src="images/process_rfidcards.jpg")
-
-      section.fullscreen.xv.organic
-        .content
-          .box
-            h2 Investment
-            ul
-              li ~30 hours together
-              li ~90 individual person hours
-              li Worked lunch, nights and 1 whole day (my garage)
-              li ~$450 for all hardware including fridge
 
       section
         .fullscreen
@@ -123,9 +118,36 @@ html
             li.alert.alert-info Debian Linux
             li.alert.alert-success Node.JS
 
+      section
+        .fullscreen
+          img.fillh(src="images/Cloud9_Screen.png")
+        .content
+          .box
+            h2: a(href="http://beagleboard.org/support/bonescript") BoneScript
+            .mid or
+            h2 Just Use System Commands
+
       section.fullscreen
         .content
           img.fillh(src="images/rfid.jpg")
+
+      section
+        .fullscreen
+        .content
+          h2 RFID Read
+          pre: code.language-javascript.
+            var DEVICE_ID = '/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_AI02KO15-if00-port0';
+            var readableStream = fs.createReadStream(DEVICE_ID);
+            readableStream.on('data', function(data) {
+              callback(data.toString('hex'));
+            });
+            readableStream.on('close', function() {
+              common.command('forever restartall');
+            });
+
+      section.fullscreen
+        .content
+          img(src="images/process_rfidcards.jpg")
 
       section
         .fullscreen
