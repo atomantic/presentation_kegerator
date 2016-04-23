@@ -6,6 +6,9 @@
 
 The slides are hosted on [github pages](http://bit.ly/kegiot)
 
+## View/Fork the Source Code:
+[https://github.com/atomantic/kegiot](https://github.com/atomantic/kegiot)
+
 or you can build the slides locally:
 
 First, ensure you have the following installed:
