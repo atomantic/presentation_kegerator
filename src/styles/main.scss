@@ -476,6 +476,9 @@ img.smallish {
         rgba(0, 0, 0, 0)
       );
   }
+  &.darker {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
 }
 .darken {
   background-image:
